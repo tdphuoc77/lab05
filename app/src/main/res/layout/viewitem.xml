@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="404dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/giacchuyen1" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/img"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/img" />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="109dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="2dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#969DAA"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPrice"
+            app:layout_constraintStart_toEndOf="@+id/tvPrice"
+            app:layout_constraintTop_toTopOf="@+id/tvPrice"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@android:style/Widget.Material.RatingBar.Small"
+            android:layout_width="81dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:rating="4"
+
+            app:layout_constraintStart_toStartOf="@+id/productName"
+            app:layout_constraintTop_toBottomOf="@+id/productName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
